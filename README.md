@@ -20,7 +20,8 @@ for discoverability.
 ## Packages
 
 Packages are git repos consumable via
-`eigenscript --pkg add <name> <git-url> <tag>`. See
+`eigenscript --pkg add <owner>/<name> <git-url> <tag>`. The tool
+requires the `<owner>/<name>` form — bare names are reserved. See
 [CONTRIBUTING.md](#contributing) for naming and versioning
 guidance.
 
