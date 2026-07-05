@@ -20,9 +20,9 @@ for discoverability.
 ## Packages
 
 Packages are git repos consumable via
-`eigenscript --pkg add <owner>/<name> <git-url> <tag>`. The tool
+`eigenscript --pkg add <owner>/<name> <git-url> [tag]`. The tool
 requires the `<owner>/<name>` form — bare names are reserved. See
-[CONTRIBUTING.md](#contributing) for naming and versioning
+the [Contributing](#contributing) section for naming and versioning
 guidance.
 
 ### Getting Started
@@ -49,7 +49,8 @@ the `eigenscript` binary.
 
 - **[eigenscript](https://github.com/InauguralSystems/EigenScript)** —
   The language itself. `eigenscript --fmt`, `eigenscript --lint`,
-  `eigenscript --pkg`, `eigenscript --lsp` are the built-in tools.
+  and `eigenscript --pkg` are the built-in tools; `make lsp` builds
+  the companion `eigenlsp` language server.
 - **[homebrew-eigenscript](https://github.com/InauguralSystems/homebrew-eigenscript)** —
   Homebrew tap. `brew install InauguralSystems/eigenscript/eigenscript`.
 
@@ -72,8 +73,9 @@ the `eigenscript` binary.
   TextMate grammar in the language repo.
 - **[Vim](https://github.com/InauguralSystems/EigenScript/tree/main/editors/vim)** —
   Syntax file in the language repo.
-- **LSP** — `eigenscript --lsp` speaks the Language Server Protocol;
-  point any LSP-capable editor at it.
+- **LSP** — `make lsp` builds the `eigenlsp` binary (installed
+  alongside `eigenscript` by `make install`), which speaks the
+  Language Server Protocol; point any LSP-capable editor at it.
 
 ## Showcase
 
