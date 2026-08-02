@@ -79,8 +79,14 @@ the `eigenscript` binary.
 
 ## Showcase
 
-Real programs and projects written in EigenScript. (Empty for now —
-open a PR when you ship something.)
+Real programs and projects written in EigenScript.
+
+- **[ouroboros](https://github.com/InauguralSystems/ouroboros)** —
+  Self-hosting compiler written in EigenScript (source → the C VM's
+  bytecode, byte-exact bootstrap fixed point), plus a native AOT
+  compiler (AST → C) diffed byte-for-byte against the VM as oracle.
+
+Open a PR when you ship something.
 
 ## Contributing
 
